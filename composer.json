@@ -1,7 +1,7 @@
 {
     "name": "eva-bi/laravel-slack-api",
     "description": "A lightweight PHP implementation of Slack's API",
-    "type": "composer-plugin",
+    "keywords": ["slack", "laravel", "api"],
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tuanla\\Slack\\": "src/"
+            "Tuanla\\Laravel\\SlackWebApi\\": "src/"
         }
     },
 }
