@@ -1,8 +1,4 @@
 # :rocket: Laravel Slack API :rocket:
-[![Latest Stable Version](https://poser.pugx.org/lisennk/laravel-slack-web-api/v/stable)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
-[![Total Downloads](https://poser.pugx.org/lisennk/laravel-slack-web-api/downloads)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
-[![License](https://poser.pugx.org/lisennk/laravel-slack-web-api/license)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
-[![Build Status](https://travis-ci.org/Lisennk/Laravel-Slack-Web-API.svg?branch=master)](https://travis-ci.org/Lisennk/Laravel-Slack-Web-API)
 
 Lightweight Laravel 5 wrapper for the Slack Web API, including a facade and config options.
 
@@ -18,9 +14,9 @@ Please note that this implementation is very lightweight meaning you'll need to 
 ## :earth_americas: Installation
 **1)** Require the package with Composer
 ```bash
-composer require lisennk/laravel-slack-web-api
+composer require eva-bi/laravel-slack-web-api
 ```
-**2)** Open `config/app.php` and add `\Lisennk\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class` to the `providers[]` array
+**2)** Open `config/app.php` and add `\Tuanla\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class` to the `providers[]` array
 
 *For example:*
 ```php
@@ -31,12 +27,12 @@ composer require lisennk/laravel-slack-web-api
     // A whole bunch of providers
     // ...
     
-    \Lisennk\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class
+    \Tuanla\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class
   ],
   
   // ...
 ```
-**3)** If you want to use the Facade, add `\Lisennk\Laravel\SlackWebApi\Facades\SlackApi::class` to the `aliases[]` array in `config/app.php`
+**3)** If you want to use the Facade, add `\Tuanla\Laravel\SlackWebApi\Facades\SlackApi::class` to the `aliases[]` array in `config/app.php`
 
 *For example:*
 ```php
@@ -47,7 +43,7 @@ composer require lisennk/laravel-slack-web-api
     // A whole bunch of aliases
     // ...
     
-    'SlackApi' => \Lisennk\Laravel\SlackWebApi\Facades\SlackApi::class
+    'SlackApi' => \Tuanla\Laravel\SlackWebApi\Facades\SlackApi::class
   ],
   
   // ...
@@ -74,8 +70,8 @@ This will return a plain PHP array containing the response data from Slack.
 
 ####**1)** Basic example of usage in a Controller:
 ```php
-use \Lisennk\Laravel\SlackWebApi\SlackApi;
-use \Lisennk\Laravel\SlackWebApi\Exceptions\SlackApiException;
+use \Tuanla\Laravel\SlackWebApi\SlackApi;
+use \Tuanla\Laravel\SlackWebApi\Exceptions\SlackApiException;
 
 // ...
 
@@ -96,7 +92,7 @@ public function postMessage(SlackApi $api)
 ```
 ####**2)** Basic usage with the Facade:
 ```php
-use \Lisennk\Laravel\SlackWebApi\Exceptions\SlackApiException;
+use \Tuanla\Laravel\SlackWebApi\Exceptions\SlackApiException;
 
 // ...
 
@@ -114,10 +110,4 @@ public function postMessage()
 }
 
 // ...
-```
-## :hibiscus: Contributing
-
-Feel free to create pull requests or issues, and report typos.
-## :books: Reference 
-* To use Slack Events API, we recommend the [Laravel Slack Events API package](https://github.com/Lisennk/Slack-Events)
 

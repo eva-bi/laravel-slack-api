@@ -1,13 +1,13 @@
-<?php namespace Tuanla\Slack\Http;
+<?php namespace Tuanla\Laravel\SlackWebApi\Http;
 
-use Tuanla\Slack\Contracts\Http\ResponseFactory;
+use Tuanla\Laravel\SlackWebApi\Contracts\Http\ResponseFactory;
 
-class CurlInteractor implements \Tuanla\Slack\Contracts\Http\Interactor {
+class CurlInteractor implements \Tuanla\Laravel\SlackWebApi\Contracts\Http\Interactor {
 
     /**
      * The response factory to use.
      *
-     * @var \Tuanla\Slack\Contracts\Http\ResponseFactory
+     * @var \Tuanla\Laravel\SlackWebApi\Contracts\Http\ResponseFactory
      */
     protected $factory;
 
@@ -62,7 +62,7 @@ class CurlInteractor implements \Tuanla\Slack\Contracts\Http\Interactor {
      * Executes a curl request.
      *
      * @param  resource $request
-     * @return \Tuanla\Slack\Contracts\Http\Response
+     * @return \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response
      */
     public function executeRequest($request)
     {

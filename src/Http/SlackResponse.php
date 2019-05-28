@@ -1,6 +1,6 @@
-<?php namespace Tuanla\Slack\Http;
+<?php namespace Tuanla\Laravel\SlackWebApi\Http;
 
-class SlackResponse implements \Tuanla\Slack\Contracts\Http\Response, \JsonSerializable {
+class SlackResponse implements \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response, \JsonSerializable {
 
     /**
      * The response body.

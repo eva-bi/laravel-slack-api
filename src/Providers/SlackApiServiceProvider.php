@@ -1,9 +1,9 @@
 <?php
 
-namespace Lisennk\Laravel\SlackWebApi\Providers;
+namespace Tuanla\Laravel\SlackWebApi\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Lisennk\Laravel\SlackWebApi\SlackApi;
+use Tuanla\Laravel\SlackWebApi\SlackApi;
 
 class SlackApiServiceProvider extends ServiceProvider
 {

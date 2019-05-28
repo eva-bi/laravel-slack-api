@@ -1,9 +1,9 @@
 <?php
 
-namespace Lisennk\Laravel\SlackWebApi\Facades;
+namespace Tuanla\Laravel\SlackWebApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Lisennk\Laravel\SlackWebApi\SlackApi as Api;
+use Tuanla\Laravel\SlackWebApi\SlackApi as Api;
 
 class SlackApi extends Facade
 {

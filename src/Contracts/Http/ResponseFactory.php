@@ -1,4 +1,4 @@
-<?php namespace Tuanla\Slack\Contracts\Http;
+<?php namespace Tuanla\Laravel\SlackWebApi\Contracts\Http;
 
 interface ResponseFactory {
 
@@ -8,7 +8,7 @@ interface ResponseFactory {
      * @param  string  $body
      * @param  array   $headers
      * @param  integer $statusCode
-     * @return \Tuanla\Slack\Contracts\Http\Response
+     * @return \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response
      */
     public function build($body, array $headers, $statusCode);
 

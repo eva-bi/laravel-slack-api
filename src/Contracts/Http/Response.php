@@ -1,4 +1,4 @@
-<?php namespace Tuanla\Slack\Contracts\Http;
+<?php namespace Tuanla\Laravel\SlackWebApi\Contracts\Http;
 
 interface Response {
 

@@ -1,7 +1,7 @@
-<?php namespace Tuanla\Slack\Core;
+<?php namespace Tuanla\Laravel\SlackWebApi\Core;
 
 use InvalidArgumentException;
-use Tuanla\Slack\Contracts\Http\Interactor;
+use Tuanla\Laravel\SlackWebApi\Contracts\Http\Interactor;
 
 class Commander {
 
@@ -432,13 +432,13 @@ class Commander {
     /**
      * The Http interactor.
      *
-     * @var \Tuanla\Slack\Contracts\Http\Interactor
+     * @var \Tuanla\Laravel\SlackWebApi\Contracts\Http\Interactor
      */
     protected $interactor;
 
     /**
      * @param string $token
-     * @param \Tuanla\Slack\Contracts\Http\Interactor $interactor
+     * @param \Tuanla\Laravel\SlackWebApi\Contracts\Http\Interactor $interactor
      */
     public function __construct($token, Interactor $interactor)
     {
@@ -451,7 +451,7 @@ class Commander {
      *
      * @param  string $command
      * @param  array $parameters
-     * @return \Tuanla\Slack\Contracts\Http\Response
+     * @return \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response
      */
     public function execute($command, array $parameters = [])
     {

@@ -2,9 +2,9 @@
 
 namespace Tuanla\Laravel\SlackWebApi;
 
-use Tuanla\Slack\Http\SlackResponseFactory;
-use Tuanla\Slack\Http\CurlInteractor;
-use Tuanla\Slack\Core\Commander;
+use Tuanla\Laravel\SlackWebApi\Http\SlackResponseFactory;
+use Tuanla\Laravel\SlackWebApi\Http\CurlInteractor;
+use Tuanla\Laravel\SlackWebApi\Core\Commander;
 use Tuanla\Laravel\SlackWebApi\Exceptions\SlackApiException;
 
 /**

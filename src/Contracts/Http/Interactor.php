@@ -1,4 +1,4 @@
-<?php namespace Tuanla\Slack\Contracts\Http;
+<?php namespace Tuanla\Laravel\SlackWebApi\Contracts\Http;
 
 interface Interactor {
 
@@ -8,7 +8,7 @@ interface Interactor {
      * @param  string $url
      * @param  array  $parameters
      * @param  array  $headers
-     * @return \Tuanla\Slack\Contracts\Http\Response
+     * @return \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response
      */
     public function get($url, array $parameters = [], array $headers = []);
 
@@ -19,14 +19,14 @@ interface Interactor {
      * @param  array  $urlParameters
      * @param  array  $postParameters
      * @param  array  $headers
-     * @return \Tuanla\Slack\Contracts\Http\Response
+     * @return \Tuanla\Laravel\SlackWebApi\Contracts\Http\Response
      */
     public function post($url, array $urlParameters = [], array $postParameters = [], array $headers = []);
 
     /**
      * Sets the response factory to use.
      *
-     * @param  \Tuanla\Slack\Contracts\Http\ResponseFactory $factory
+     * @param  \Tuanla\Laravel\SlackWebApi\Contracts\Http\ResponseFactory $factory
      * @return void
      */
     public function setResponseFactory(ResponseFactory $factory);
