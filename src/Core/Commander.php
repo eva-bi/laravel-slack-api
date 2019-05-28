@@ -412,7 +412,69 @@ class Commander {
         'users.admin.invite' => [
             'token'    => true,
             'endpoint' => '/users.admin.invite'
-        ]
+        ],
+        'conversations.archive' => [
+            'token'    => true,
+            'endpoint' => '/conversations.archive'
+        ],
+        'conversations.create' => [
+            'token'    => true,
+            'endpoint' => '/conversations.create'
+        ],
+        'conversations.history' => [
+            'token'    => true,
+            'endpoint' => '/conversations.history'
+        ],
+        'conversations.info' => [
+            'token'    => true,
+            'endpoint' => '/conversations.info'
+        ],
+        'conversations.invite' => [
+            'token'    => true,
+            'endpoint' => '/conversations.invite'
+        ],
+        'conversations.join' => [
+            'token'    => true,
+            'endpoint' => '/conversations.join'
+        ],
+        'conversations.kick' => [
+            'token'    => true,
+            'endpoint' => '/conversations.kick'
+        ],
+        'conversations.leave' => [
+            'token'    => true,
+            'endpoint' => '/conversations.leave'
+        ],
+        'conversations.list' => [
+            'token'    => true,
+            'endpoint' => '/conversations.list'
+        ],
+        'conversations.mark' => [
+            'token'    => true,
+            'endpoint' => '/conversations.mark'
+        ],
+        'conversations.rename' => [
+            'token'    => true,
+            'endpoint' => '/conversations.rename'
+        ],
+        'conversations.setPurpose' => [
+            'token'    => true,
+            'endpoint' => '/conversations.setPurpose',
+            'format'   => [
+                'purpose'
+            ]
+        ],
+        'conversations.setTopic' => [
+            'token'    => true,
+            'endpoint' => '/conversations.setTopic',
+            'format'   => [
+                'topic'
+            ]
+        ],
+        'conversations.unarchive' => [
+            'token'    => true,
+            'endpoint' => '/conversations.unarchive'
+        ],
     ];
 
     /**
