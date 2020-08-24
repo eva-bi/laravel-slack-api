@@ -107,6 +107,15 @@ class Commander {
                 'text'
             ]
         ],
+        'chat.command' => [
+            'token'    => true,
+            'endpoint' => '/chat.command',
+            'format'   => [
+                'command',
+                'text'
+            ]
+        ],
+        'chat.
         'dnd.endDnd' => [
             'token'    => true,
             'endpoint' => '/dnd.endDnd'
